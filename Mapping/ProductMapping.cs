@@ -51,8 +51,8 @@ public static class ProductMapping
             product.Name,
             product.CurrentPrice,
             product.OldPrice,
-            product.BackdropUrl,
             product.Description,
+            product.BackdropUrl,
             product.Rating,
             product.CategoryId
         );
