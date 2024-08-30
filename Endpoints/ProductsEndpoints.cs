@@ -37,7 +37,7 @@ group.MapPost("/", async (CreateProductDto newProduct , ProductContext dbContext
 {
 
 Product product = newProduct.ToEntity();
-product.Category = dbContext.Category.Find(newProduct.CategoryId);
+// product.Category = dbContext.Category.Find(newProduct.CategoryId);
 
 dbContext.Product.Add(product);
 await dbContext.SaveChangesAsync();
